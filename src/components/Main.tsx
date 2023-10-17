@@ -7,10 +7,11 @@ import Button from "./Button";
 
 function Main() {
   const navigate = useNavigate();
-  const gotToPictures = () => {
+  const goToPictures = () => {
     // This will navigate to first component
-    navigate("/Pictures");
+    navigate("/pictures");
   };
+
   const [alertVisible, setAlertVisibility] = useState(false);
   let pictureItems = ["Tanzania", "India", "Norway", "Studio"];
   let sourceItems = ["Pages", "Videos", "Fonts"];
@@ -21,7 +22,8 @@ function Main() {
   return (
     <div className="App">
       <span className="header"> Synnøve Moss Nygård </span>
-      <Button onClick={gotToPictures}>
+
+      <Button onClick={goToPictures}>
         <span className="heading">Pictures</span>
       </Button>
 
